@@ -11,14 +11,20 @@ public class Door : MonoBehaviour
 	public float doorClosedAngle = 0f;
 	public float animationSmoothness = 2f;
 
+	private AudioSource audioSource;
+	public AudioClip openingSound;
+
 	public void ChangeDoorState()
 	{
 		isDoorOpen = !isDoorOpen;
+
+		if (audioSource != null)
+			audioSource.PlayOneShot(openingSound);
 	}
 	// Start is called before the first frame update
 	void Start()
     {
-        
+		audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
