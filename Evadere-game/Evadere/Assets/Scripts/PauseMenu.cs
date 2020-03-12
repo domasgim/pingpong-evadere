@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
 
     public GameObject PauseMenuUI;
+    public GameObject playerObject;
+
 
     // Update is called once per frame
     void Update()
@@ -29,6 +33,7 @@ public class PauseMenu : MonoBehaviour
         PauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        playerObject.GetComponent<FirstPersonController>().enabled = true;
     }
 
     void Pause()
@@ -36,6 +41,7 @@ public class PauseMenu : MonoBehaviour
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        playerObject.GetComponent<FirstPersonController>().enabled = false;
     }
 
     public void LoadMenu()
