@@ -27,7 +27,7 @@ public class Interact : MonoBehaviour
 
 		if (Physics.Raycast(interactRay, out hitInformation, interactDistance, interactLayer) && isInteracting == false)
 		{
-			Debug.Log("A");
+			//Debug.Log("A");
 			interactIcon.enabled = true;
 			if (Input.GetButtonDown(interactButton))
 			{

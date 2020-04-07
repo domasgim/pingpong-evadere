@@ -14,6 +14,13 @@ public class Inventory : MonoBehaviour
 
     public GameObject slotHolder;
 
+    public static Inventory instance;
+
+    void Awake()
+    {
+        instance = this;
+    }
+
     void Start()
     {
         allSlots = 24;
@@ -78,5 +85,18 @@ public class Inventory : MonoBehaviour
             }
             return;
         }
+    }
+
+    public bool inInventory(string itemType)
+    {
+        bool exists = false;
+        for(int i = 0; i < allSlots; i++)
+        {
+            if(slot[i].GetComponent<Slot>().type == itemType)
+            {
+                exists = true;
+            }
+        }
+        return exists;
     }
 }
