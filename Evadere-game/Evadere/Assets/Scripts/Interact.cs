@@ -35,6 +35,7 @@ public class Interact : MonoBehaviour
 					hitInformation.collider.GetComponent<Door>().ChangeDoorState();
 				if (hitInformation.collider.CompareTag("Note"))
 					hitInformation.collider.GetComponent<Note>().ShowNoteImage();
+
 			}
 		}
 		else
