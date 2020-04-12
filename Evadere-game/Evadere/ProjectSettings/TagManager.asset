@@ -11,6 +11,7 @@ TagManager:
   - Chair
   - Book
   - Note2
+  - Code
   layers:
   - Default
   - TransparentFX

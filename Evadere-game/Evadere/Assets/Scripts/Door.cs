@@ -15,7 +15,7 @@ public class Door : MonoBehaviour
 	private AudioSource audioSource;
 	public AudioClip openingSound;
 
-	public void ChangeDoorState()
+    public void ChangeDoorState()
 	{
 		if (isDoorUnlocked)
 		{
