@@ -11,7 +11,7 @@ public class PickUp : MonoBehaviour
         GetComponent<BoxCollider>().enabled = false;
         GetComponent<Rigidbody>().useGravity = false;
         this.transform.position = theDest.position;
-        this.transform.parent = GameObject.Find("Destination").transform;
+        this.transform.parent = GameObject.Find("ChairDestination").transform;
     }
 
     void OnMouseUp()

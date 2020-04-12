@@ -8,6 +8,7 @@ TagManager:
   - Note
   - Item
   - Drawer
+  - Chair
   layers:
   - Default
   - TransparentFX

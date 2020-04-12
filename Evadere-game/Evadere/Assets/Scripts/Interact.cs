@@ -35,8 +35,9 @@ public class Interact : MonoBehaviour
 					hitInformation.collider.GetComponent<Door>().ChangeDoorState();
 				if (hitInformation.collider.CompareTag("Note"))
 					hitInformation.collider.GetComponent<Note>().ShowNoteImage();
-
-			}
+                if (hitInformation.collider.CompareTag("Chair"))
+                    hitInformation.collider.GetComponent<PickUp>();
+            }
 		}
 		else
 			interactIcon.enabled = false;
