@@ -9,6 +9,8 @@ TagManager:
   - Item
   - Drawer
   - Chair
+  - Book
+  - Note2
   layers:
   - Default
   - TransparentFX

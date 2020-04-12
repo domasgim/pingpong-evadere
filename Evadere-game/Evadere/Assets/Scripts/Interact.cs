@@ -37,6 +37,8 @@ public class Interact : MonoBehaviour
 					hitInformation.collider.GetComponent<Note>().ShowNoteImage();
                 if (hitInformation.collider.CompareTag("Chair"))
                     hitInformation.collider.GetComponent<PickUp>();
+                if (hitInformation.collider.CompareTag("Drawer"))
+                    hitInformation.transform.GetComponent<OpenDrawer>().PerformAction();
             }
 		}
 		else
