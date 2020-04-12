@@ -1587,8 +1587,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
-  m_Range: 5
+  m_Intensity: 1
+  m_Range: 3
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -6770,6 +6770,25 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2006243362}
   m_Mesh: {fileID: -66333826979096818, guid: 8a7855166c6de084d962aebb2d9ee57a, type: 3}
+--- !u!1 &2048062959 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100046, guid: 0ccd472cba226de41b565ef0ab256ed8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1959233743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2048062963
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048062959}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4982224, y: 0.6424001, z: 0.19740002}
+  m_Center: {x: -0.00019785017, y: 0.34750047, z: -0.5358593}
 --- !u!1 &2072478955
 GameObject:
   m_ObjectHideFlags: 0
