@@ -48,21 +48,19 @@ public class Code : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         hideCodeButton.SetActive(true);
-        openDoorButton.SetActive(true);
+        openDoorButton.SetActive(true);       
     }
 
     // Update is called once per frame
     void Update()
     {
-        // If code is correct. Code is 1952
-        if(number01 == 1 && number02 == 9 && number03 == 5 && number04 == 2)
+        if (number01 == 1 && number02 == 9 && number03 == 5 && number04 == 2)
         {
             opened = true;
-            if (audioSource != null)
-                audioSource.PlayOneShot(openingSound);
         }
-        if(opened == true)
+        if (opened == true)
         {
+            opened = false;
             Open();
         }
     }
@@ -72,6 +70,8 @@ public class Code : MonoBehaviour
         Quaternion targetRotationOpen = Quaternion.Euler(-90, doorOpenAngle, 0);
         transform.localRotation = Quaternion.Slerp(transform.localRotation,
             targetRotationOpen, animationSmoothness * Time.deltaTime);
+
+        //audioSource.PlayOneShot(openingSound);
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

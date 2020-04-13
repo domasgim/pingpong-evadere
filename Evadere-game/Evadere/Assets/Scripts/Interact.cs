@@ -43,6 +43,8 @@ public class Interact : MonoBehaviour
                     hitInformation.collider.GetComponent<Code>().ShowCodeCanvas();
                 if (hitInformation.collider.CompareTag("Note2"))
                     hitInformation.collider.GetComponent<NoteCode>().ShowNoteImage();
+				if (hitInformation.collider.CompareTag("Book"))
+					hitInformation.collider.GetComponent<PickUp>();
 
             }
 		}
