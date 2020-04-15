@@ -12,6 +12,7 @@ TagManager:
   - Book
   - Note2
   - Code
+  - DoorToLevel2
   layers:
   - Default
   - TransparentFX

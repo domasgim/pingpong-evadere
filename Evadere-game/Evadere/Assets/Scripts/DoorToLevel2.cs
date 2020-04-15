@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
 
-public class Code : MonoBehaviour
+public class DoorToLevel2 : MonoBehaviour
 {
     public Canvas safeCanvas;
     public GameObject playerObject;
@@ -29,11 +29,6 @@ public class Code : MonoBehaviour
     public Text textNumber03;
     public Text textNumber04;
 
-    public int one;
-    public int two;
-    public int three;
-    public int four;
-
     public bool opened;
 
     void Start()
@@ -45,23 +40,21 @@ public class Code : MonoBehaviour
         openDoorButton.SetActive(false);
     }
 
-    public void ShowCodeCanvas()
+    public void ShowCodeCanvas2()
     {
-       
-            safeCanvas.enabled = true;
-            playerObject.GetComponent<FirstPersonController>().enabled = false;
+        safeCanvas.enabled = true;
+        playerObject.GetComponent<FirstPersonController>().enabled = false;
 
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            hideCodeButton.SetActive(true);
-            openDoorButton.SetActive(true);
-       
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        hideCodeButton.SetActive(true);
+        openDoorButton.SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (number01 == one && number02 == two && number03 == three && number04 == four)
+        if (number01 == 3 && number02 == 4 && number03 == 1 && number04 == 5)
         {
             opened = true;
         }
@@ -139,7 +132,7 @@ public class Code : MonoBehaviour
         {
             number01++;
             textNumber01.text = number01.ToString();
-            if(number01 > 9)
+            if (number01 > 9)
             {
                 number01 = 1;
                 textNumber01.text = number01.ToString();
