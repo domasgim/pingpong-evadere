@@ -64,6 +64,7 @@ public class Code : MonoBehaviour
         if (number01 == one && number02 == two && number03 == three && number04 == four)
         {
             opened = true;
+            ExitCanvas(1);
         }
         if (opened == true)
         {
@@ -125,9 +126,6 @@ public class Code : MonoBehaviour
             safeCanvas.enabled = false;
             hideCodeButton.SetActive(false);
 
-
-            if (audioSource != null)
-                audioSource.PlayOneShot(clickSound);
         }
     }
 

@@ -822,8 +822,8 @@ MonoBehaviour:
   openDoorButton: {fileID: 87321617}
   doorOpenAngle: 90
   animationSmoothness: 2
-  openingSound: {fileID: 0}
-  closingSound: {fileID: 0}
+  openingSound: {fileID: 8300000, guid: 8ef488959fed6ae4b9b0d79564b2f974, type: 3}
+  closingSound: {fileID: 8300000, guid: 71673c7ce47a6cf4ca643d66ad14289c, type: 3}
   clickSound: {fileID: 8300000, guid: 23449253b4d86804f84b596f714d2b43, type: 3}
   textNumber01: {fileID: 731128318}
   textNumber02: {fileID: 987356755}
@@ -10726,12 +10726,17 @@ PrefabInstance:
     - target: {fileID: -4773789647333247926, guid: 8a7855166c6de084d962aebb2d9ee57a,
         type: 3}
       propertyPath: m_TagString
-      value: DoorToLevel2
+      value: Code
       objectReference: {fileID: 0}
     - target: {fileID: -4773789647333247926, guid: 8a7855166c6de084d962aebb2d9ee57a,
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -4773789647333247926, guid: 8a7855166c6de084d962aebb2d9ee57a,
+        type: 3}
+      propertyPath: m_Name
+      value: CodeDoor2
       objectReference: {fileID: 0}
     - target: {fileID: -4380007505401605648, guid: 8a7855166c6de084d962aebb2d9ee57a,
         type: 3}
