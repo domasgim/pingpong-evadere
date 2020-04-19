@@ -61,14 +61,8 @@ public class Code : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (number01 == one && number02 == two && number03 == three && number04 == four)
+       if(opened == true)
         {
-            opened = true;
-            ExitCanvas(1);
-        }
-        if (opened == true)
-        {
-            opened = false;
             Open();
         }
     }
@@ -78,20 +72,11 @@ public class Code : MonoBehaviour
         Quaternion targetRotationOpen = Quaternion.Euler(-90, doorOpenAngle, 0);
         transform.localRotation = Quaternion.Slerp(transform.localRotation,
             targetRotationOpen, animationSmoothness * Time.deltaTime);
-
-        //audioSource.PlayOneShot(openingSound);
-
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-
-        playerObject.GetComponent<FirstPersonController>().enabled = true;
-        safeCanvas.enabled = false;
-        hideCodeButton.SetActive(false);
     }
 
     public void UnlockDoor()
     {
-        if (opened == true)
+        if (number01 == one && number02 == two && number03 == three && number04 == four)
         {
             Quaternion targetRotationOpen = Quaternion.Euler(-90, doorOpenAngle, 0);
             transform.localRotation = Quaternion.Slerp(transform.localRotation,
@@ -106,6 +91,8 @@ public class Code : MonoBehaviour
             playerObject.GetComponent<FirstPersonController>().enabled = true;
             safeCanvas.enabled = false;
             hideCodeButton.SetActive(false);
+
+            opened = true;
         }
         else
         {
