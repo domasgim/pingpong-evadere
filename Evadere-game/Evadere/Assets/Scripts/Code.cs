@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.SceneManagement;
 
 public class Code : MonoBehaviour
 {
@@ -35,6 +36,8 @@ public class Code : MonoBehaviour
     public int four;
 
     public bool opened;
+
+    public bool isTransitionDoor;
 
     void Start()
     {
@@ -93,6 +96,11 @@ public class Code : MonoBehaviour
             hideCodeButton.SetActive(false);
 
             opened = true;
+
+            if (isTransitionDoor)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
         }
         else
         {
