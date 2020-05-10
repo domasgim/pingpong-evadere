@@ -1,0 +1,13 @@
+1. Pirmas raktas bus antram is kaires kambary, lockeryje, reik padaryti, kad kazkas uzdetu animacija - locker atidaryti
+2. Rades pirma rakta zaidejas eina i tolima kambari(spawnui is desines)
+3.3 lockeris is desines turi atsidaryti su key1, bet reik padaryt, kad paimt galetum ta key1 i inventory paspaudes su pele(reik padaryst) 
+4. atidarius lockeri bus note'as su duota morzes kodo abecele, (padaryti, kad paimt i inv iseitu) pirmam kambary rasi kasete, kuria idejus i radia bus 4 skaiciai morzes kodu padiktuoti ( tarkim 8523, reik padaryti, kad soktu i inv paspaudus 'E') duoti atrakinti kita spintele, kai atrakins kita spintele, kur bus kasete morzes kodu bus pasakytas zodis (Veteran).
+
+
+
+
+
+pirmas kambarys - pirmas is kaires, kai atsispawnini
+antras kambarys - antras is kaires, kai atsispawnini
+trecias kambarys - lockeriu kambarys
+radio kambarys - ten kur radias (antras aukstas)
