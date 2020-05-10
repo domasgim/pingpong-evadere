@@ -2,10 +2,8 @@
 2. Rades pirma rakta zaidejas eina i tolima kambari(spawnui is desines)
 3.3 lockeris is desines turi atsidaryti su key1, bet reik padaryt, kad paimt galetum ta key1 i inventory paspaudes su pele(reik padaryst) 
 4. atidarius lockeri bus note'as su duota morzes kodo abecele, (padaryti, kad paimt i inv iseitu) pirmam kambary rasi kasete, kuria idejus i radia bus 4 skaiciai morzes kodu padiktuoti ( tarkim 8523, reik padaryti, kad soktu i inv paspaudus 'E') duoti atrakinti kita spintele, kai atrakins kita spintele, kur bus kasete morzes kodu bus pasakytas zodis (Veteran).
-5. I antra korpusa(radio room) pateksi pro vintili, ir po to is kitos patrauksi kede ir galesi atrakint duris(reik padaryt, kad atsirakintu is patraukus kede kazkaip.(kad galetum grizt reik tas duris atsidaryt, nes i vintili tik is vieno room galesi petekt)
-6. i vintili kad patektum reik atsinest kede is locker room pasidet ja ant lovos ir kai bus sutvarkytas crouch galesi isokt i vintili
+5. I antra korpusa(radio room) pateksi pro vintili, ir po to is kitos patrauksi stala ir galesi atrakint duris, kad nebereiktu varinet vel per vintili
 
-Antra korpuso darys gedas, tai jis gal eiga aprasys
 
 
 
