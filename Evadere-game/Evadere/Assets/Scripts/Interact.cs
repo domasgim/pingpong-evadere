@@ -51,7 +51,9 @@ public class Interact : MonoBehaviour
 					hitInformation.collider.GetComponent<LevelExit>().ExitLevel();
 				if (hitInformation.collider.CompareTag("Radio"))
 					hitInformation.collider.GetComponent<Radio>().PlayNumberCode();
-			}
+                if (hitInformation.collider.CompareTag("Locker"))
+                    hitInformation.collider.GetComponent<LockerOpen>().ChangeDoorState();
+            }
 		}
 		else
 			interactIcon.enabled = false;
