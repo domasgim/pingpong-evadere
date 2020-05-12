@@ -13,6 +13,8 @@ TagManager:
   - Note2
   - Code
   - DoorToLevel2
+  - LevelExit
+  - Radio
   layers:
   - Default
   - TransparentFX

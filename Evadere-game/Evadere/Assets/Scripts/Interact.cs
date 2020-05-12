@@ -47,8 +47,11 @@ public class Interact : MonoBehaviour
                     hitInformation.collider.GetComponent<NoteCode>().ShowNoteImage();
 				if (hitInformation.collider.CompareTag("Book"))
 					hitInformation.collider.GetComponent<PickUp>();
-                
-            }
+				if (hitInformation.collider.CompareTag("LevelExit"))
+					hitInformation.collider.GetComponent<LevelExit>().ExitLevel();
+				if (hitInformation.collider.CompareTag("Radio"))
+					hitInformation.collider.GetComponent<Radio>().PlayNumberCode();
+			}
 		}
 		else
 			interactIcon.enabled = false;

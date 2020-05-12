@@ -8941,6 +8941,7 @@ MonoBehaviour:
   doorClosedAngle: 0
   animationSmoothness: 2
   openingSound: {fileID: 8300000, guid: 8ef488959fed6ae4b9b0d79564b2f974, type: 3}
+  lockedSound: {fileID: 0}
 --- !u!82 &1096174817
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9037,6 +9038,31 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1106495446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3990036101274998414, guid: 8a7855166c6de084d962aebb2d9ee57a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1255502616}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1106495448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106495446}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c47866eab34f9f449734fe3f25ebcbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDoorOpen: 0
+  isDoorUnlocked: 0
+  doorOpenAngle: 90
+  doorClosedAngle: 0
+  animationSmoothness: 2
+  openingSound: {fileID: 0}
+  lockedSound: {fileID: 0}
 --- !u!1 &1118524370
 GameObject:
   m_ObjectHideFlags: 0
@@ -10825,6 +10851,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.7
       objectReference: {fileID: 0}
+    - target: {fileID: -3990036101274998414, guid: 8a7855166c6de084d962aebb2d9ee57a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Door
+      objectReference: {fileID: 0}
     - target: {fileID: -3683106809650472956, guid: 8a7855166c6de084d962aebb2d9ee57a,
         type: 3}
       propertyPath: m_Layer
@@ -10854,6 +10885,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.428
+      objectReference: {fileID: 0}
+    - target: {fileID: 8940632808050562651, guid: 8a7855166c6de084d962aebb2d9ee57a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.369
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a7855166c6de084d962aebb2d9ee57a, type: 3}
@@ -18640,6 +18676,7 @@ MonoBehaviour:
   doorClosedAngle: 0
   animationSmoothness: 2
   openingSound: {fileID: 8300000, guid: 8ef488959fed6ae4b9b0d79564b2f974, type: 3}
+  lockedSound: {fileID: 8300000, guid: 71673c7ce47a6cf4ca643d66ad14289c, type: 3}
 --- !u!82 &2125016031
 AudioSource:
   m_ObjectHideFlags: 0

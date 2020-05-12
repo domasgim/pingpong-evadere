@@ -14,8 +14,9 @@ public class Door : MonoBehaviour
 
 	private AudioSource audioSource;
 	public AudioClip openingSound;
+	public AudioClip lockedSound;
 
-    public void ChangeDoorState()
+	public void ChangeDoorState()
 	{
 		if (isDoorUnlocked)
 		{
@@ -33,6 +34,7 @@ public class Door : MonoBehaviour
 			{
 				isDoorUnlocked = !isDoorUnlocked;
 			}
+			else audioSource.PlayOneShot(lockedSound);
 		}
 	}
 	// Start is called before the first frame update
