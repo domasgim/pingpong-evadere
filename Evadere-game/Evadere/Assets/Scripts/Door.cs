@@ -23,7 +23,12 @@ public class Door : MonoBehaviour
 			isDoorOpen = !isDoorOpen;
 
 			if (audioSource != null)
-				audioSource.PlayOneShot(openingSound);
+			{
+				if (!audioSource.isPlaying)
+				{
+					audioSource.PlayOneShot(openingSound);
+				}
+			}
 		}
 		else
 		{

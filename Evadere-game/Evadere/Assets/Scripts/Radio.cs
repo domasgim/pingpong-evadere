@@ -14,9 +14,12 @@ public class Radio : MonoBehaviour
 
     public void PlayNumberCode()
     {
-        Debug.Log("Radio morse code sound");
-
         if (audioSource != null)
-            audioSource.PlayOneShot(numberMorseCode);
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(numberMorseCode);
+            }         
+        }
     }
 }
