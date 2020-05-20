@@ -5,6 +5,8 @@ using UnityEngine;
 public class PLayer : MonoBehaviour
 {
     public InventoryObject inventory;
+    bool InventoryVisualsEnabled = false;
+    public GameObject InventoryVisuals;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -18,5 +20,20 @@ public class PLayer : MonoBehaviour
     private void OnApplicationQuit()
     {
         inventory.Container.Clear();
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            InventoryVisualsEnabled = !InventoryVisualsEnabled;
+        }
+
+        if (InventoryVisualsEnabled)
+        {
+            InventoryVisuals.SetActive(true);
+        }
+        else
+            InventoryVisuals.SetActive(false);
     }
 }

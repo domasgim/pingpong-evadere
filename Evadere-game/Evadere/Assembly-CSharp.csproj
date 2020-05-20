@@ -64,7 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Asset stuff\AssetStoreOriginals\_SNAPS_PrototypingAssets\About\Scripts\Readme.cs" />
     <Compile Include="Assets\Asset stuff\Interior\OldRadio\Okean\CamRotat.cs" />
-    <Compile Include="Assets\DisplayInventory.cs" />
+    <Compile Include="Assets\ScriptableObjects\DisplayInventory.cs" />
     <Compile Include="Assets\ScriptableObjects\Inventory\Scripts\InventoryObject.cs" />
     <Compile Include="Assets\ScriptableObjects\Item.cs" />
     <Compile Include="Assets\ScriptableObjects\Items\Scripts\BatteryObject.cs" />

@@ -15,4 +15,4 @@ MonoBehaviour:
   prefab: {fileID: 4163949467134615573, guid: fd7feccb3a99b1c47af3b53dd6e0483a, type: 3}
   type: 1
   description: 
-  restoreEnergy: 0
+  restoreEnergy: 15
