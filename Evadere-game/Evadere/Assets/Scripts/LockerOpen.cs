@@ -28,7 +28,7 @@ public class LockerOpen : MonoBehaviour
         {
             bool hasAKey = false;
             // Call function to check if the inventory holds a key
-            hasAKey = Inventory.instance.inInventory("Key1");
+            //hasAKey = Inventory.instance.inInventory("Key1");
             if (hasAKey)
             {
                 isDoorUnlocked = !isDoorUnlocked;

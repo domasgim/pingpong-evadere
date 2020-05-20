@@ -34,7 +34,7 @@ public class Door : MonoBehaviour
 		{
 			bool hasAKey = false;
 			// Call function to check if the inventory holds a key
-			hasAKey = Inventory.instance.inInventory("Key");
+			//hasAKey = Inventory.instance.inInventory("Key");
 			if (hasAKey)
 			{
 				isDoorUnlocked = !isDoorUnlocked;
