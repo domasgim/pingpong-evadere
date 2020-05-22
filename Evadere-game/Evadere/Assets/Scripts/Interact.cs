@@ -35,7 +35,7 @@ public class Interact : MonoBehaviour
 					hitInformation.collider.GetComponent<Door>().ChangeDoorState();
 				if (hitInformation.collider.CompareTag("Note"))
 					hitInformation.collider.GetComponent<Note>().ShowNoteImage();
-                if (hitInformation.collider.CompareTag("Chair"))
+				if (hitInformation.collider.CompareTag("Chair"))
                     hitInformation.collider.GetComponent<PickUp>();
                 if (hitInformation.collider.CompareTag("DoorToLevel2"))
                     hitInformation.collider.GetComponent<Code>().ShowCodeCanvas();
@@ -53,7 +53,14 @@ public class Interact : MonoBehaviour
 					hitInformation.collider.GetComponent<Radio>().PlayNumberCode();
                 if (hitInformation.collider.CompareTag("Locker"))
                     hitInformation.collider.GetComponent<LockerOpen>().ChangeDoorState();
-            }
+				if (hitInformation.collider.CompareTag("ItemCase"))
+					hitInformation.collider.GetComponent<ItemCase>().ChangeCaseState();
+				if (hitInformation.collider.CompareTag("PipeValve"))
+					hitInformation.collider.GetComponent<PipeValve>().ChangeValveState();
+				if (hitInformation.collider.CompareTag("ElectricBoxHinge"))
+					hitInformation.collider.GetComponent<ElectricBoxHinge>().ChangeHingeState();
+
+			}
 		}
 		else
 			interactIcon.enabled = false;
