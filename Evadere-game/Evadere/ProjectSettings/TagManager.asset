@@ -17,6 +17,9 @@ TagManager:
   - Radio
   - Locker
   - 'Barell '
+  - ItemCase
+  - PipeValve
+  - ElectricBox
   layers:
   - Default
   - TransparentFX

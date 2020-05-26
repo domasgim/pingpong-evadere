@@ -53,7 +53,14 @@ public class Interact : MonoBehaviour
 					hitInformation.collider.GetComponent<Radio>().PlayNumberCode();
                 if (hitInformation.collider.CompareTag("Locker"))
                     hitInformation.collider.GetComponent<LockerOpen>().ChangeDoorState();
-            }
+				if (hitInformation.collider.CompareTag("ItemCase"))
+					hitInformation.collider.GetComponent<ItemCase>().ChangeCaseState();
+				if (hitInformation.collider.CompareTag("PipeValve"))
+					hitInformation.collider.GetComponent<PipeValve>().ChangeValveState();
+				if (hitInformation.collider.CompareTag("ElectricBox"))
+					hitInformation.collider.GetComponent<ElectricBoxHinge>().ChangeHingeState();
+
+			}
 		}
 		else
 			interactIcon.enabled = false;
