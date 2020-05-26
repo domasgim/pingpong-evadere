@@ -6621,7 +6621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDoorOpen: 0
-  isDoorUnlocked: 1
+  isDoorUnlocked: 0
   doorOpenAngle: 90
   doorClosedAngle: 0
   animationSmoothness: 2
