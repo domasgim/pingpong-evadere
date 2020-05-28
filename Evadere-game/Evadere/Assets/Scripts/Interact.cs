@@ -59,8 +59,11 @@ public class Interact : MonoBehaviour
 					hitInformation.collider.GetComponent<PipeValve>().ChangeValveState();
 				if (hitInformation.collider.CompareTag("ElectricBox"))
 					hitInformation.collider.GetComponent<ElectricBoxHinge>().ChangeHingeState();
-
-			}
+                if (hitInformation.collider.CompareTag("Locker1"))
+                    hitInformation.collider.GetComponent<Code>().ShowCodeCanvas();
+                if (hitInformation.collider.CompareTag("Locker2"))
+                    hitInformation.collider.GetComponent<Code>().ShowCodeCanvas();
+            }
 		}
 		else
 			interactIcon.enabled = false;
