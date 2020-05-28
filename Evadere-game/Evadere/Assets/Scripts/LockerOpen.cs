@@ -6,6 +6,7 @@ public class LockerOpen : MonoBehaviour
 
 
 {
+    public InventoryObject inventory;
     public bool isDoorOpen = false;
     public bool isDoorUnlocked = true;
     public float doorOpenAngle = 90f;
@@ -28,7 +29,11 @@ public class LockerOpen : MonoBehaviour
         {
             bool hasAKey = false;
             // Call function to check if the inventory holds a key
-            hasAKey = Inventory.instance.inInventory("Key1");
+            for (int i = 0; i < inventory.Container.Count; i++)
+            {
+                if (inventory.Container[i].item.name.Equals("LockerKey"))
+                    hasAKey = true;
+            }
             if (hasAKey)
             {
                 isDoorUnlocked = !isDoorUnlocked;

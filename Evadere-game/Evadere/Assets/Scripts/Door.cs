@@ -6,7 +6,9 @@ public class Door : MonoBehaviour
 
 	
 {
-	public bool isDoorOpen = false;
+    public InventoryObject inventory;
+
+    public bool isDoorOpen = false;
 	public bool isDoorUnlocked = true;
 	public float doorOpenAngle = 90f;
 	public float doorClosedAngle = 0f;
@@ -33,9 +35,13 @@ public class Door : MonoBehaviour
 		else
 		{
 			bool hasAKey = false;
-			// Call function to check if the inventory holds a key
-			hasAKey = Inventory.instance.inInventory("Key");
-			if (hasAKey)
+            // Call function to check if the inventory holds a key
+            for (int i = 0; i < inventory.Container.Count; i++)
+            {
+                if (inventory.Container[i].item.name.Equals("Key"))
+                    hasAKey = true;
+            }
+            if (hasAKey)
 			{
 				isDoorUnlocked = !isDoorUnlocked;
 			}
