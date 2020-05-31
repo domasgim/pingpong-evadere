@@ -1519,6 +1519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fi_vil_container_crate_big (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 469a67ce7c458e0418fd4dd439f1912f, type: 3}
+      propertyPath: m_TagString
+      value: 'Barell '
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 469a67ce7c458e0418fd4dd439f1912f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.5840006
@@ -2342,7 +2346,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.62298983, y: 0.38784617, z: 0.2610515}
+  m_Size: {x: 0.9229898, y: 0.6878462, z: 0.5610515}
   m_Center: {x: 0.028927343, y: 0.04345938, z: 0.049552184}
 --- !u!1 &221316696
 GameObject:
@@ -3031,7 +3035,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1219893155}
         m_MethodName: IncreaseNumber
         m_Mode: 3
         m_Arguments:
@@ -3869,7 +3873,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1219893155}
         m_MethodName: ExitCanvas
         m_Mode: 3
         m_Arguments:
@@ -4289,7 +4293,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1219893155}
         m_MethodName: IncreaseNumber
         m_Mode: 3
         m_Arguments:
@@ -5541,7 +5545,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1219893155}
         m_MethodName: UnlockDoor
         m_Mode: 1
         m_Arguments:
@@ -8623,7 +8627,7 @@ PrefabInstance:
     - target: {fileID: -2745567992595731601, guid: 2e22b566301fe9e4bbe63d8629cfff78,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 2e22b566301fe9e4bbe63d8629cfff78,
         type: 3}
@@ -9139,7 +9143,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725762081}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e685abf8cae1274b9a2f0ad08be701e, type: 3}
   m_Name: 
@@ -9148,6 +9152,37 @@ MonoBehaviour:
   playerObject: {fileID: 162523021}
   hideCodeButton: {fileID: 0}
   openDoorButton: {fileID: 0}
+  doorOpenAngle: 90
+  animationSmoothness: 2
+  openingSound: {fileID: 0}
+  closingSound: {fileID: 0}
+  clickSound: {fileID: 0}
+  textNumber01: {fileID: 0}
+  textNumber02: {fileID: 0}
+  textNumber03: {fileID: 0}
+  textNumber04: {fileID: 0}
+  one: 0
+  two: 0
+  three: 0
+  four: 0
+  opened: 0
+  isTransitionDoor: 0
+--- !u!114 &725762087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725762081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfe462d746c6e14d832fed6a7add001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  safeCanvas: {fileID: 643773864}
+  playerObject: {fileID: 162523021}
+  hideCodeButton: {fileID: 335784542}
+  openDoorButton: {fileID: 460957617}
   doorOpenAngle: 90
   animationSmoothness: 2
   openingSound: {fileID: 0}
@@ -13476,7 +13511,7 @@ MonoBehaviour:
   playerObject: {fileID: 162523021}
   hideCodeButton: {fileID: 335784542}
   openDoorButton: {fileID: 460957617}
-  doorOpenAngle: 90
+  doorOpenAngle: -90
   animationSmoothness: 2
   openingSound: {fileID: 0}
   closingSound: {fileID: 0}
@@ -13485,10 +13520,10 @@ MonoBehaviour:
   textNumber02: {fileID: 1883902701}
   textNumber03: {fileID: 1794820789}
   textNumber04: {fileID: 1227045019}
-  one: 0
-  two: 0
-  three: 0
-  four: 0
+  one: 1
+  two: 1
+  three: 1
+  four: 1
   opened: 0
   isTransitionDoor: 0
 --- !u!1 &1227045017
@@ -15345,6 +15380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: fi_vil_container_crate_big (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 469a67ce7c458e0418fd4dd439f1912f, type: 3}
+      propertyPath: m_TagString
+      value: 'Barell '
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 469a67ce7c458e0418fd4dd439f1912f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.734
@@ -16616,7 +16655,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1219893155}
         m_MethodName: DecreaseNumber
         m_Mode: 3
         m_Arguments:
@@ -18071,7 +18110,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1219893155}
         m_MethodName: DecreaseNumber
         m_Mode: 3
         m_Arguments:
@@ -18435,6 +18474,37 @@ MonoBehaviour:
   four: 0
   opened: 0
   isTransitionDoor: 0
+--- !u!114 &1674402270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674402263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfe462d746c6e14d832fed6a7add001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  safeCanvas: {fileID: 643773864}
+  playerObject: {fileID: 162523021}
+  hideCodeButton: {fileID: 335784542}
+  openDoorButton: {fileID: 460957617}
+  doorOpenAngle: 90
+  animationSmoothness: 2
+  openingSound: {fileID: 0}
+  closingSound: {fileID: 0}
+  clickSound: {fileID: 0}
+  textNumber01: {fileID: 0}
+  textNumber02: {fileID: 0}
+  textNumber03: {fileID: 0}
+  textNumber04: {fileID: 0}
+  one: 0
+  two: 0
+  three: 0
+  four: 0
+  opened: 0
+  isTransitionDoor: 0
 --- !u!1 &1679159344 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 6ae4988e9e2ba5d41a6bd328ab7421dd,
@@ -18467,15 +18537,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679159344}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e685abf8cae1274b9a2f0ad08be701e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   safeCanvas: {fileID: 643773864}
   playerObject: {fileID: 162523021}
-  hideCodeButton: {fileID: 0}
-  openDoorButton: {fileID: 0}
+  hideCodeButton: {fileID: 335784542}
+  openDoorButton: {fileID: 460957617}
   doorOpenAngle: 90
   animationSmoothness: 2
   openingSound: {fileID: 0}
@@ -18489,6 +18559,37 @@ MonoBehaviour:
   two: 2
   three: 3
   four: 4
+  opened: 0
+  isTransitionDoor: 0
+--- !u!114 &1679159351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679159344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfe462d746c6e14d832fed6a7add001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  safeCanvas: {fileID: 643773864}
+  playerObject: {fileID: 162523021}
+  hideCodeButton: {fileID: 335784542}
+  openDoorButton: {fileID: 460957617}
+  doorOpenAngle: -110
+  animationSmoothness: 2
+  openingSound: {fileID: 8300000, guid: 0b621deb0ade23b4f8cfc510d86d515c, type: 3}
+  closingSound: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: 71673c7ce47a6cf4ca643d66ad14289c, type: 3}
+  textNumber01: {fileID: 1838546432}
+  textNumber02: {fileID: 1883902701}
+  textNumber03: {fileID: 1794820789}
+  textNumber04: {fileID: 1227045019}
+  one: 7
+  two: 6
+  three: 2
+  four: 1
   opened: 0
   isTransitionDoor: 0
 --- !u!1 &1681242047 stripped
@@ -18532,6 +18633,37 @@ MonoBehaviour:
   playerObject: {fileID: 162523021}
   hideCodeButton: {fileID: 0}
   openDoorButton: {fileID: 0}
+  doorOpenAngle: 90
+  animationSmoothness: 2
+  openingSound: {fileID: 0}
+  closingSound: {fileID: 0}
+  clickSound: {fileID: 0}
+  textNumber01: {fileID: 0}
+  textNumber02: {fileID: 0}
+  textNumber03: {fileID: 0}
+  textNumber04: {fileID: 0}
+  one: 0
+  two: 0
+  three: 0
+  four: 0
+  opened: 0
+  isTransitionDoor: 0
+--- !u!114 &1681242054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681242047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfe462d746c6e14d832fed6a7add001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  safeCanvas: {fileID: 643773864}
+  playerObject: {fileID: 162523021}
+  hideCodeButton: {fileID: 335784542}
+  openDoorButton: {fileID: 460957617}
   doorOpenAngle: 90
   animationSmoothness: 2
   openingSound: {fileID: 0}
@@ -18629,7 +18761,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1219893155}
         m_MethodName: DecreaseNumber
         m_Mode: 3
         m_Arguments:
@@ -19270,7 +19402,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1219893155}
         m_MethodName: IncreaseNumber
         m_Mode: 3
         m_Arguments:
@@ -20237,7 +20369,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1219893155}
         m_MethodName: DecreaseNumber
         m_Mode: 3
         m_Arguments:
@@ -20614,7 +20746,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1956347422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22099,7 +22231,7 @@ PrefabInstance:
     - target: {fileID: 1678344526606065627, guid: 563c2131ab3560e4ba037fbfa09cde05,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.54
+      value: 7.9
       objectReference: {fileID: 0}
     - target: {fileID: 1678344526606065627, guid: 563c2131ab3560e4ba037fbfa09cde05,
         type: 3}
@@ -22109,7 +22241,7 @@ PrefabInstance:
     - target: {fileID: 1678344526606065627, guid: 563c2131ab3560e4ba037fbfa09cde05,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.93
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 1678344526606065627, guid: 563c2131ab3560e4ba037fbfa09cde05,
         type: 3}
@@ -22300,6 +22432,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InvCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7501325499591176144, guid: da4d3587690f30843bd7bfccfc52a44f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.5999756
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da4d3587690f30843bd7bfccfc52a44f, type: 3}
