@@ -22,6 +22,8 @@ TagManager:
   - ElectricBox
   - Locker1
   - Locker2
+  - Vine
+  - VineChair
   layers:
   - Default
   - TransparentFX

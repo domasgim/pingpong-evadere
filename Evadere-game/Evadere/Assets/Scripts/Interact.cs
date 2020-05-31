@@ -60,9 +60,9 @@ public class Interact : MonoBehaviour
 				if (hitInformation.collider.CompareTag("ElectricBox"))
 					hitInformation.collider.GetComponent<ElectricBoxHinge>().ChangeHingeState();
                 if (hitInformation.collider.CompareTag("Locker1"))
-                    hitInformation.collider.GetComponent<Code>().ShowCodeCanvas();
+                    hitInformation.collider.GetComponent<LockerCode>().ShowCodeCanvas();
                 if (hitInformation.collider.CompareTag("Locker2"))
-                    hitInformation.collider.GetComponent<Code>().ShowCodeCanvas();
+                    hitInformation.collider.GetComponent<LockerCode>().ShowCodeCanvas();
             }
 		}
 		else

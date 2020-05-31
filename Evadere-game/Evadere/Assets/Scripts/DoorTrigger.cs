@@ -16,7 +16,13 @@ public class DoorTrigger : MonoBehaviour
     void OnTriggerEnter (Collider col)
     {
         door.transform.position += new Vector3(0, 5, 0);
-        //add sound effect
+        if (audioSource != null)
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(openingSound);
+            }
+        }
     }
 
     void OnTriggerExit(Collider col)
