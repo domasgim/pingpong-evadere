@@ -50,6 +50,14 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void SaveGame()
+    {
+        int level = SceneManager.GetActiveScene().buildIndex;
+        Vector3 data = playerObject.GetComponent<FirstPersonController>().transform.position;
+        PlayerData playerData = new PlayerData(level, data);
+        SaveSystem.SavePlayer(playerData);
+    }
+
     public void QuitGame()
     {
         Debug.Log("Quitting the game...");
