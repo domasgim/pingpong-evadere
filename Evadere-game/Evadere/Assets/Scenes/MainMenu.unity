@@ -180,6 +180,7 @@ MonoBehaviour:
   continueButton: {fileID: 0}
   newGameButton: {fileID: 0}
   playButton: {fileID: 0}
+  playerObject: {fileID: 0}
 --- !u!114 &61717070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +277,7 @@ MonoBehaviour:
   continueButton: {fileID: 1170683329}
   newGameButton: {fileID: 1839426650}
   playButton: {fileID: 1422737635}
+  playerObject: {fileID: 0}
 --- !u!114 &107789444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3425,7 +3427,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 107789443}
-        m_MethodName: PlayGame
+        m_MethodName: NewGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -28,6 +28,14 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    public static void PlayerTransform(Vector3 position, bool afterSave)
+    {
+        if(afterSave){
+            // TODO - add player object position transform       
+            Debug.Log(position);
+        }
+    }
+
     public void Resume()
     {
         PauseMenuUI.SetActive(false);
@@ -53,7 +61,10 @@ public class PauseMenu : MonoBehaviour
     public void SaveGame()
     {
         int level = SceneManager.GetActiveScene().buildIndex;
-        Vector3 data = playerObject.GetComponent<FirstPersonController>().transform.position;
+        float datax = playerObject.GetComponent<FirstPersonController>().transform.position.x;
+        float datay = playerObject.GetComponent<FirstPersonController>().transform.position.y;
+        float dataz = playerObject.GetComponent<FirstPersonController>().transform.position.z;
+        float[] data = {datax, datay, dataz};
         PlayerData playerData = new PlayerData(level, data);
         SaveSystem.SavePlayer(playerData);
     }

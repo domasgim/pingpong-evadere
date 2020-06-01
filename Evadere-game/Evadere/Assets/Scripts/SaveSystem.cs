@@ -29,7 +29,14 @@ public class SaveSystem
             try
             {
                 PlayerData data = formatter.Deserialize(stream) as PlayerData;
-                return data;
+                if(data != null)
+                {
+                    return data;
+                } else
+                {
+                    File.Delete(path);
+                    return null;
+                }
             }
             finally
             {
@@ -39,6 +46,15 @@ public class SaveSystem
         {
             Debug.LogError("Save file not found");
             return null;
+        }
+    }
+
+    public static void RemoveSave()
+    {
+        string path = Application.persistentDataPath + "/save.sav";
+        if(File.Exists(path))
+        {
+            File.Delete(path);
         }
     }
 }

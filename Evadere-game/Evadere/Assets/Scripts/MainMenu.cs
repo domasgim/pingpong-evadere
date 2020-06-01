@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     public GameObject continueButton;
     public GameObject newGameButton;
     public GameObject playButton;
+
     private void Start()
     {
         PlayerData data = SaveSystem.LoadPlayer();
@@ -25,9 +26,16 @@ public class MainMenu : MonoBehaviour
             playButton.SetActive(true);
         }
     }
+
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+	}
+
+    public void NewGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SaveSystem.RemoveSave();
 	}
 
     public void ContinueGame()
@@ -36,6 +44,11 @@ public class MainMenu : MonoBehaviour
         if(data != null)
         {
             SceneManager.LoadScene(data.level);
+            Vector3 position;
+            position.x = data.position[0];
+            position.y = data.position[1];
+            position.z = data.position[2];
+            PauseMenu.PlayerTransform(position, true);
         }
     }
 
