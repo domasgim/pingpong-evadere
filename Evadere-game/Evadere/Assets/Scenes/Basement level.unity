@@ -22656,10 +22656,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: InvCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 7501325499591176144, guid: da4d3587690f30843bd7bfccfc52a44f,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 3.5999756
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da4d3587690f30843bd7bfccfc52a44f, type: 3}

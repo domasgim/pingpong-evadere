@@ -56,7 +56,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -132,10 +132,10 @@ RectTransform:
   m_Father: {fileID: 7501325499437201938}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 372, y: 3.600006}
-  m_SizeDelta: {x: -772.7, y: -96.8}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 437.9, y: 0}
+  m_SizeDelta: {x: 338.2, y: 495.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7501325499591176141
 CanvasRenderer:
@@ -158,13 +158,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.9098039}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 28206aaa2e0769a4f8ad5c6f9eb66408, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -186,8 +186,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: ada8327da69327c4cb36457397662da4, type: 2}
-  X_SPACE_BETWEEN_ITEM: 50
-  NUMBER_OF_COLLUMN: 4
+  inventoryPrefab: {fileID: 6578990959692424043, guid: 0c17a3cbd3cb7eb4c80c65df9193e963,
+    type: 3}
+  X_SPACE_BETWEEN_ITEM: 100
+  NUMBER_OF_COLLUMN: 3
   Y_SPACE_BETWEEN_ITEMS: 50
-  X_START: -100
-  Y_START: 100
+  X_START: -90
+  Y_START: 152

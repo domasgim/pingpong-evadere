@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6ba7c6a7f24eb8428313b32511a211c, type: 3}
   m_Name: LargeBattery
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2666179888947879621, guid: b1dc06de6c09b0d4cac39501167eda5b, type: 3}
+  ID: 0
+  uiDisplay: {fileID: 0}
   type: 1
   description: 
   restoreEnergy: 45

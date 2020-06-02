@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28ff22ba53e6414faaec636b61fef92, type: 3}
   m_Name: Key
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4163949467134615573, guid: fd7feccb3a99b1c47af3b53dd6e0483a, type: 3}
+  ID: 3
+  uiDisplay: {fileID: 21300000, guid: f0c3fbc3ae16c9c4abd476f5f836bf30, type: 3}
   type: 3
   description: 
   KeyName: Key
