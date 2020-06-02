@@ -19,7 +19,7 @@ public class PLayer : MonoBehaviour
     }
     private void OnApplicationQuit()
     {
-        inventory.Container.Items.Clear();
+        inventory.Container.Items = new InventorySlot[12];
     }
 
     public void Update()
@@ -31,10 +31,18 @@ public class PLayer : MonoBehaviour
 
         if (InventoryVisualsEnabled)
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             InventoryVisuals.SetActive(true);
+
         }
         else
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
             InventoryVisuals.SetActive(false);
+        }
+            
 
         if (Input.GetKeyDown(KeyCode.F12))
         { inventory.Save(); }

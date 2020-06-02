@@ -3942,6 +3942,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: InvCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7501325499591176147, guid: da4d3587690f30843bd7bfccfc52a44f,
+        type: 3}
+      propertyPath: Y_SPACE_BETWEEN_ITEMS
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da4d3587690f30843bd7bfccfc52a44f, type: 3}
 --- !u!1 &479919914
@@ -12483,6 +12488,7 @@ GameObject:
   - component: {fileID: 1618196554}
   - component: {fileID: 1618196559}
   - component: {fileID: 1618196558}
+  - component: {fileID: 1618196560}
   m_Layer: 8
   m_Name: NoteCode
   m_TagString: Note2
@@ -12498,7 +12504,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618196553}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 15.140031, y: 8, z: 14.892906}
@@ -12677,6 +12683,19 @@ MonoBehaviour:
   pickupSound: {fileID: 8300000, guid: a3c27cd894e932c41a07a462bf60ea5e, type: 3}
   putAwaySound: {fileID: 8300000, guid: f59a68dc2a2b26a46ade5076596a3cd8, type: 3}
   playerObject: {fileID: 1398020147}
+--- !u!114 &1618196560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618196553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdc04c31c0cbcbc4f8cda922cc115dcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: add5becfaa8d2754084aa25c32c96d4c, type: 2}
 --- !u!4 &1651049235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4273250617847128, guid: f383356d4eb91f44daddce1e70077112,

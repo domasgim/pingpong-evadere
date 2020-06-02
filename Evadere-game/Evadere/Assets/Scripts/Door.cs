@@ -36,7 +36,7 @@ public class Door : MonoBehaviour
 		{
 			bool hasAKey = false;
             // Call function to check if the inventory holds a key
-            for (int i = 0; i < inventory.Container.Items.Count; i++)
+            for (int i = 0; i < inventory.Container.Items.Length; i++)
             {
                 if (inventory.Container.Items[i].item.Name.Equals("Key"))
                     hasAKey = true;

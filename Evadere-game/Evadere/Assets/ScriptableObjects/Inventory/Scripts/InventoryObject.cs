@@ -17,17 +17,30 @@ public class InventoryObject : ScriptableObject
     
     public void AddItem(Item _item, int _amount)
     {
-        for (int i = 0; i < Container.Items.Count; i++)
+        for (int i = 0; i < Container.Items.Length; i++)
         {
-            if(Container.Items[i].item.Id == _item.Id)
+            if(Container.Items[i].ID == _item.Id)
             {
                 Container.Items[i].AddAmount(_amount);
                 return;
             }
         }
-            Container.Items.Add(new InventorySlot(_item.Id, _item, _amount));
+        SetEmpySlot(_item, _amount);
+            
     }
-
+    public InventorySlot SetEmpySlot(Item _item, int _amount)
+    {
+        for (int i = 0; i < Container.Items.Length; i++)
+        {
+            if(Container.Items[i].ID <= -1)
+            {
+                Container.Items[i].UpdateSlot(_item.Id, _item, _amount);
+                return Container.Items[i];
+            }
+        }
+        //Sutvarkyti kai pilna
+        return null;
+    }
     [ContextMenu("Save")]
     public void Save()
     {
@@ -71,18 +84,31 @@ public class InventoryObject : ScriptableObject
 [System.Serializable]
 public class Inventory
 {
-    public List<InventorySlot> Items = new List<InventorySlot>();
+    public InventorySlot[] Items = new InventorySlot[12];
 
 }
 
 [System.Serializable]
 public class InventorySlot
 {
-    public int ID;
+    public int ID = -1;
     public Item item;
     public int amount;
 
+    public InventorySlot()
+    {
+        ID = -1;
+        item = null;
+        amount = 0;
+    }
     public InventorySlot(int _id, Item _item, int _amount)
+    {
+        ID = _id;
+        item = _item;
+        amount = _amount;
+    }
+
+    public void UpdateSlot(int _id, Item _item, int _amount)
     {
         ID = _id;
         item = _item;
