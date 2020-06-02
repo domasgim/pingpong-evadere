@@ -72,7 +72,7 @@ public class LockerCode : MonoBehaviour
 
     public void Open()
     {
-        Quaternion targetRotationOpen = Quaternion.Euler(-90, doorOpenAngle, 0);
+        Quaternion targetRotationOpen = Quaternion.Euler(0, doorOpenAngle, 0);
         transform.localRotation = Quaternion.Slerp(transform.localRotation,
             targetRotationOpen, animationSmoothness * Time.deltaTime);
     }
@@ -81,7 +81,7 @@ public class LockerCode : MonoBehaviour
     {
         if (number01 == one && number02 == two && number03 == three && number04 == four)
         {
-            Quaternion targetRotationOpen = Quaternion.Euler(-90, doorOpenAngle, 0);
+            Quaternion targetRotationOpen = Quaternion.Euler(0, doorOpenAngle, 0);
             transform.localRotation = Quaternion.Slerp(transform.localRotation,
                 targetRotationOpen, animationSmoothness * Time.deltaTime);
 
