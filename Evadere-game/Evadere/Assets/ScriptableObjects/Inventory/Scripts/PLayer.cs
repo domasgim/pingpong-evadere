@@ -24,7 +24,7 @@ public class PLayer : MonoBehaviour
         inventory.Container.Items = new InventorySlot[12];
     }
 
-    public void Update()
+    public void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
@@ -33,18 +33,20 @@ public class PLayer : MonoBehaviour
 
         if (InventoryVisualsEnabled)
         {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
             InventoryVisuals.SetActive(true);
-            playerObject.GetComponent<FirstPersonController>().enabled = false;
+            // playerObject.GetComponent<FirstPersonController>().enabled = false;
+
+            // Cursor.lockState = CursorLockMode.None;
+            // Cursor.visible = true;
 
         }
         else
         {
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
             InventoryVisuals.SetActive(false);
-            playerObject.GetComponent<FirstPersonController>().enabled = true;
+            // playerObject.GetComponent<FirstPersonController>().enabled = true;
+
+            // Cursor.lockState = CursorLockMode.Locked;
+            // Cursor.visible = false;
         }
             
 
