@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Crouch : MonoBehaviour
 {
+	public GameObject playerScale;
+	public Camera myCam;
+	public float camHeight = 1f;
+
     private CharacterController m_CharacterController;
     private bool m_Crouch = false;
 
@@ -31,11 +35,15 @@ public class Crouch : MonoBehaviour
     {
         if(m_Crouch == true)
         {
-            m_CharacterController.height = m_CrouchHeight;
+			playerScale.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+			//myCam.transform.position = myCam.transform.position - new Vector3(myCam.transform.localPosition.x, camHeight, myCam.transform.localPosition.z);
+            m_CharacterController.height = 0;
         }
         else
         {
-            m_CharacterController.height = m_OriginalHeight;
+			playerScale.transform.localScale = new Vector3(1.3f, 1.3f, 1.3f);
+			//myCam.transform.position = myCam.transform.position + new Vector3(myCam.transform.localPosition.x, camHeight, myCam.transform.localPosition.z);
+			m_CharacterController.height = m_OriginalHeight;
         }
     }
 }
