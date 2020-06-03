@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.FirstPerson;
 
 public class PLayer : MonoBehaviour
 {
     public InventoryObject inventory;
     bool InventoryVisualsEnabled = false;
     public GameObject InventoryVisuals;
+    public GameObject playerObject;
 
     public void OnTriggerEnter(Collider other)
     {
@@ -19,7 +21,7 @@ public class PLayer : MonoBehaviour
     }
     private void OnApplicationQuit()
     {
-        inventory.Container.Items.Clear();
+        inventory.Container.Items = new InventorySlot[12];
     }
 
     public void Update()
@@ -31,10 +33,20 @@ public class PLayer : MonoBehaviour
 
         if (InventoryVisualsEnabled)
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
             InventoryVisuals.SetActive(true);
+            playerObject.GetComponent<FirstPersonController>().enabled = false;
+
         }
         else
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
             InventoryVisuals.SetActive(false);
+            playerObject.GetComponent<FirstPersonController>().enabled = true;
+        }
+            
 
         if (Input.GetKeyDown(KeyCode.F12))
         { inventory.Save(); }

@@ -188,8 +188,10 @@ MonoBehaviour:
   inventory: {fileID: 11400000, guid: ada8327da69327c4cb36457397662da4, type: 2}
   inventoryPrefab: {fileID: 6578990959692424043, guid: 0c17a3cbd3cb7eb4c80c65df9193e963,
     type: 3}
+  DisplayNote: {fileID: 0}
+  Button: {fileID: 0}
   X_SPACE_BETWEEN_ITEM: 100
   NUMBER_OF_COLLUMN: 3
-  Y_SPACE_BETWEEN_ITEMS: 50
+  Y_SPACE_BETWEEN_ITEMS: 100
   X_START: -90
   Y_START: 152

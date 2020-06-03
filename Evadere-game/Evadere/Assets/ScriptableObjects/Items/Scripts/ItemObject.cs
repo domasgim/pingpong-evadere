@@ -8,7 +8,8 @@ public enum ItemType
     Equipment,
     Batteries,
     Default,
-    Keys
+    Keys,
+    Notes
 }
 public abstract class ItemObject : ScriptableObject
 {

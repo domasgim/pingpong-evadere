@@ -11,6 +11,7 @@ public class LockerCode : MonoBehaviour
     public GameObject playerObject;
     public GameObject hideCodeButton;
     public GameObject openDoorButton;
+    public GameObject planeCollider;
     public float doorOpenAngle = 90f;
     public float animationSmoothness = 2f;
 
@@ -42,6 +43,7 @@ public class LockerCode : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+
         opened = false;
         safeCanvas.enabled = false;
         hideCodeButton.SetActive(false);
@@ -67,6 +69,7 @@ public class LockerCode : MonoBehaviour
         if (opened == true)
         {
             Open();
+            planeCollider.GetComponent<BoxCollider>().isTrigger = true;
         }
     }
 

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f28ff22ba53e6414faaec636b61fef92, type: 3}
   m_Name: BasementKey
   m_EditorClassIdentifier: 
-  prefab: {fileID: 2666179888947879621, guid: b1dc06de6c09b0d4cac39501167eda5b, type: 3}
+  ID: 2
+  uiDisplay: {fileID: 21300000, guid: e51cf45075eb0734387aab1f731332d1, type: 3}
   type: 3
   description: 
   KeyName: BasementKey
