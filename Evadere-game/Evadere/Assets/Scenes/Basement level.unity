@@ -1857,7 +1857,7 @@ MonoBehaviour:
   three: 9
   four: 2
   opened: 0
-  isTransitionDoor: 0
+  isTransitionDoor: 1
 --- !u!65 &83516615
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17266,31 +17266,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 951770942}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c47866eab34f9f449734fe3f25ebcbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 11400000, guid: ada8327da69327c4cb36457397662da4, type: 2}
   isDoorOpen: 0
-  isDoorUnlocked: 1
+  isDoorUnlocked: 0
   doorOpenAngle: 90
   doorClosedAngle: 0
   animationSmoothness: 2
   openingSound: {fileID: 8300000, guid: 0b621deb0ade23b4f8cfc510d86d515c, type: 3}
   lockedSound: {fileID: 8300000, guid: 71673c7ce47a6cf4ca643d66ad14289c, type: 3}
---- !u!114 &951770948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951770942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b19ef3be2e190bf40a26e62d575dce4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &951770949
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22237,7 +22225,7 @@ PrefabInstance:
     - target: {fileID: -7254290558502250950, guid: df2c96e7599bfb4449c3211291c71d1f,
         type: 3}
       propertyPath: m_TagString
-      value: LevelExit
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: df2c96e7599bfb4449c3211291c71d1f,
         type: 3}
